@@ -102,7 +102,7 @@ function defend ($damage){
 	function restoreMp (){
 		//Funckja odpowiada za odnowienie many postaci
 		$this->stats['mp'] += $this->stats['mpAmount'];
-		if($this->stats['mp'] > $this->baseMp{ $this->stats['mp'] = $this->baseMp;
+		if($this->stats['mp'] > $this->baseMp) $this->stats['mp'] = $this->baseMp;
 		$this->log("$this->name przywraca sobie $this->stats['mpAmount']
 								punktów many i aktualnie posiada $this->stats['mp']
 								punktów many. <br>");

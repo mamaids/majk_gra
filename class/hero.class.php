@@ -158,9 +158,11 @@ class Hero extends Character
 		if($this->stats['mp'] >= $this->stats['fireballMp'])
 		{
 			$this->stats['mp'] -= $this->stats['fireballMp'];
-			$this->log("$this->name zużywa $this->stats['fireballMp'] puntków many,
-			zostaje mu $this->stats['mp'] po czym używa Fireball'a i zadaje
-			$this->stats['fireballDamage'] punktów obrażen $target->name <br>");
+
+			$nazwa = "$this->name zużywa {$this->stats['fireballMp']} puntków many,
+			zostaje mu {$this->stats['mp']} po czym używa Fireball'a i zadaje
+			{$this->stats['fireballDamage']} punktów obrażen $target->name <br>";
+			$this->log("$nazwa");
 			$target->defend($this->stats['fireballDamage']);
 
 
