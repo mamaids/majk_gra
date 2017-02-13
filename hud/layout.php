@@ -233,7 +233,7 @@ $hero->defend(5);
 														<!--Modal 6 -->
 				<li>
 					<a href="menu.php" style="color: white; font-size: 15px">
-							<button type="button" class="btn btn-primary btn-lg">Wyśjcie</button>
+							<button type="button" class="btn btn-primary btn-lg">Wyjście</button>
 					</a>
 				</li>
 			</ul>
